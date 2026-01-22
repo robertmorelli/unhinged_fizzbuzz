@@ -1,18 +1,9 @@
-from sys import executable
-from subprocess import run
-
 i = 1
-LIMIT = 16
-
+LIMIT = input()
 template = """
-from sys import executable
-from subprocess import run
-
 i = {i}
 LIMIT = {LIMIT}
-
 template = {template!r}
-
 if i <= LIMIT:
     if i % 15 == 0:
         print("FizzBuzz")
@@ -23,7 +14,6 @@ if i <= LIMIT:
     else:
         print(i)
 
-    run([executable, "-"], input=template.format(i=i+1, LIMIT=LIMIT, template=template), text=True)
+    exec(template.format(i=i+1, LIMIT=LIMIT, template=template))
 """
-
-run([executable, "-"], input=template.format(i=i, LIMIT=LIMIT, template=template), text=True)
+exec(template.format(i=i, LIMIT=LIMIT, template=template))
