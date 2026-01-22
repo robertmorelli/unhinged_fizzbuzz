@@ -1,9 +1,9 @@
-template = """
+t = """
+t = {t!r}
+n = {n}
 i = {i}
-LIMIT = {LIMIT}
-template = {template!r}
-if i <= LIMIT:
+if i <= n:
     print(["{i}", "Fizz", "Buzz", "FizzBuzz"][(i % 3 == 0) + 2 * (i % 5 == 0)].format(i=i))
-    exec(template.format(i=i+1, LIMIT=LIMIT, template=template))
+    exec(t.format(t=t, n=n, i=i+1))
 """
-exec(template.format(i=1, LIMIT=input(), template=template))
+exec(t.format(t=t, n=input(), i=1))
