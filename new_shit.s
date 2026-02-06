@@ -10,7 +10,13 @@
 # no call instruction
 # no stack use
 # You will have to enable self-modifying code
-# This was developed with https://marketplace.visualstudio.com/items?itemName=robertmorelli.mips-assembly which is of course based on MARS. It does have a recent patch for non-zero code fields decoding correctly.
+#
+# this was developed with this extension:
+# https://marketplace.visualstudio.com/items?itemName=robertmorelli.mips-assembly
+# its just running MARS headlessly and it does have a recent patch
+#  for non-zero code fields decoding correctly
+# this has been added to the MARS repo but might not be present in
+#  versions you may download
 
 .text
 .globl main
