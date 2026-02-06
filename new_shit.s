@@ -93,7 +93,7 @@ two:
 	la			$t8,	body
 	sw			$a0,	0($t8)
 
-	j	after_body
+	j			after_body
 
 three:
 	# print fizz
@@ -109,7 +109,7 @@ three:
 	la			$t8,	body
 	sw			$a0,	0($t8)
 
-	j	after_body
+	j			after_body
 
 four:
 	# print number
@@ -126,7 +126,7 @@ four:
 	la			$t8,	body
 	sw			$a0,	0($t8)
 
-	j	after_body
+	j			after_body
 
 five:
 	# print buzz
@@ -142,7 +142,7 @@ five:
 	la			$t8,	body
 	sw			$a0,	0($t8)
 
-	j	after_body
+	j			after_body
 
 six:
 	# print fizz
@@ -158,7 +158,7 @@ six:
 	la			$t8,	body
 	sw			$a0,	0($t8)
 
-	j	after_body
+	j			after_body
 
 seven:
 	# print number
@@ -175,7 +175,7 @@ seven:
 	la			$t8,	body
 	sw			$a0,	0($t8)
 
-	j	after_body
+	j			after_body
 
 eight:
 	# print number
@@ -192,7 +192,7 @@ eight:
 	la			$t8,	body
 	sw			$a0,	0($t8)
 
-	j	after_body
+	j			after_body
 
 nine:
 	# print fizz
@@ -208,7 +208,7 @@ nine:
 	la			$t8,	body
 	sw			$a0,	0($t8)
 
-	j	after_body
+	j			after_body
 
 ten:
 	# print buzz
@@ -224,7 +224,7 @@ ten:
 	la			$t8,	body
 	sw			$a0,	0($t8)
 
-	j	after_body
+	j			after_body
 
 eleven:
 	# print number
@@ -241,7 +241,7 @@ eleven:
 	la			$t8,	body
 	sw			$a0,	0($t8)
 
-	j	after_body
+	j			after_body
 
 twelve:
 	# print fizz
@@ -257,7 +257,7 @@ twelve:
 	la			$t8,	body
 	sw			$a0,	0($t8)
 
-	j	after_body
+	j			after_body
 
 thirteen:
 	# print number
@@ -274,7 +274,7 @@ thirteen:
 	la			$t8,	body
 	sw			$a0,	0($t8)
 
-	j	after_body
+	j			after_body
 
 fourteen:
 	# print number
@@ -291,7 +291,7 @@ fourteen:
 	la			$t8,	body
 	sw			$a0,	0($t8)
 
-	j	after_body
+	j			after_body
 
 fifteen:
 	# print fizzbuzz
@@ -307,7 +307,7 @@ fifteen:
 	la			$t8,	body
 	sw			$a0,	0($t8)
 
-	j	after_body
+	j			after_body
 
 	# this needs to be at the bottom so the loop label is aligned at page + C
 .data
