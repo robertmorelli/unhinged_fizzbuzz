@@ -9,6 +9,8 @@
 # no indexed memory reads or writes
 # no call instruction
 # no stack use
+# You will have to enable self-modifying code
+# This was developed with https://marketplace.visualstudio.com/items?itemName=robertmorelli.mips-assembly which is of course based on MARS. It does have a recent patch for non-zero code fields decoding correctly.
 
 .text
 .globl main
